@@ -2,3 +2,12 @@
 <p>Find me in app/views/pages/x.html.erb</p>
 <p>Modificación de vista</p>
 <h1>Luis Felipe Rangel Salazar</h1>
+
+<form action="<%= pages_save_user_path %>" method="post">
+  <input type="text" name="name" value="">
+  <input type="text" name="email" value="">
+  <input type="text" name="age" value="">
+  <input type="submit" name="enviar" value="">
+</form>
+
+<%= flash[:notice] %>
